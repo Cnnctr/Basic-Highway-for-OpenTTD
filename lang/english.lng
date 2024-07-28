@@ -1,10 +1,9 @@
 ##grflangid 0x01
 
-# GRF name and description definitions
+# name and description
 STR_GRF_NAME             :{TITLE} {VERSION}
 STR_GRF_DESCRIPTION      :Adds highway to the road building menu - default roads with disallowed house construction.
 
-# road name
 STR_BHWY_NAME            :Highway
 STR_BHWY_MENU_TEXT       :Highway construction
 STR_BHWY_TOOLBAR_CAPTION :Highway Construction
