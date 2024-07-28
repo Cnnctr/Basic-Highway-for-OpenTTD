@@ -19,7 +19,7 @@ STR_PARAM_ENABLE_BFWY_NAME      :Enable freeway
 STR_PARAM_ENABLE_BFWY_DESC      :Add freeway to the road building menu (default: off).
 STR_PARAM_ROAD_SPEED_LIMIT_NAME :Default road speed limit
 STR_PARAM_ROAD_SPEED_LIMIT_DESC :Set speed limit of default road in km/h (0 for no limit, default: 0).
-STR_PARAM_BHWY_SPEED_LIMIT_NAME :Highway speed limit.
+STR_PARAM_BHWY_SPEED_LIMIT_NAME :Highway speed limit
 STR_PARAM_BHWY_SPEED_LIMIT_DESC :Set speed limit of highway in km/h (0 for no limit, default: 0).
-STR_PARAM_BFWY_SPEED_LIMIT_NAME :Freeway speed limit.
+STR_PARAM_BFWY_SPEED_LIMIT_NAME :Freeway speed limit
 STR_PARAM_BFWY_SPEED_LIMIT_DESC :Set speed limit of freeway in km/h (0 for no limit, default: 0).
