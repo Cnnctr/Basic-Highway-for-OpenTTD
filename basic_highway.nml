@@ -1,19 +1,81 @@
 grf {
-	grfid:                  "MV\01\00";
+	grfid:                  "CN\01\01";
 	name:                   string(STR_GRF_NAME);
 	desc:                   string(STR_GRF_DESCRIPTION);
-	version:                0;
+	version:                1;
 	min_compatible_version: 0;
+	param {
+		param_enable_bfwy {
+			type:      bool;
+			name:      string(STR_PARAM_ENABLE_BFWY_NAME);
+			desc:      string(STR_PARAM_ENABLE_BFWY_DESC);
+			def_value: 0;
+		}
+	}
+	param {
+		param_road_speed_limit {
+			type:      int;
+			name:      string(STR_PARAM_ROAD_SPEED_LIMIT_NAME);
+			desc:      string(STR_PARAM_ROAD_SPEED_LIMIT_DESC);
+			min_value: 0;
+			max_value: 65525;
+			def_value: 0;
+		}
+	}
+	param {
+		param_bhwy_speed_limit {
+			type:      int;
+			name:      string(STR_PARAM_BHWY_SPEED_LIMIT_NAME);
+			desc:      string(STR_PARAM_BHWY_SPEED_LIMIT_DESC);
+			min_value: 0;
+			max_value: 65525;
+			def_value: 0;
+		}
+	}
+	param {
+		param_bfwy_speed_limit {
+			type:      int;
+			name:      string(STR_PARAM_BFWY_SPEED_LIMIT_NAME);
+			desc:      string(STR_PARAM_BFWY_SPEED_LIMIT_DESC);
+			min_value: 0;
+			max_value: 65525;
+			def_value: 0;
+		}
+	}
 }
 
-item(FEAT_ROADTYPES, item_basic_highway) {
+item(FEAT_ROADTYPES, item_basic_highway, 1) {
 	property {
 		label:                 "BHWY";
 		name:                  string(STR_BHWY_NAME);
 		menu_text:             string(STR_BHWY_MENU_TEXT);
 		toolbar_caption:       string(STR_BHWY_TOOLBAR_CAPTION);
 		introduction_date:     0;
-		powered_roadtype_list: ["BHWY","ROAD"];
+		powered_roadtype_list: ["ROAD", "BHWY", "BFWY"];
 		roadtype_flags:        bitmask(ROADTYPE_FLAG_NO_HOUSES);
+		speed_limit:           param_bhwy_speed_limit km/h;
+	}
+}
+
+if (param_enable_bfwy == 1) {
+	item(FEAT_ROADTYPES, item_basic_freeway, 2) {
+		property {
+			label:                 "BFWY";
+			name:                  string(STR_BFWY_NAME);
+			menu_text:             string(STR_BFWY_MENU_TEXT);
+			toolbar_caption:       string(STR_BFWY_TOOLBAR_CAPTION);
+			introduction_date:     0;
+			powered_roadtype_list: ["ROAD", "BHWY", "BFWY"];
+			roadtype_flags:        bitmask(ROADTYPE_FLAG_NO_HOUSES);
+			speed_limit:           param_bfwy_speed_limit km/h;
+		}
+	}
+}
+
+item(FEAT_ROADTYPES) {
+	property {
+		label:                 "ROAD";
+		powered_roadtype_list: ["ROAD", "BHWY", "BFWY"];
+		speed_limit:           param_road_speed_limit km/h;
 	}
 }

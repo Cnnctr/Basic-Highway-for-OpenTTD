@@ -1,9 +1,25 @@
 ##grflangid 0x01
 
 # name and description
-STR_GRF_NAME             :{TITLE} {VERSION}
-STR_GRF_DESCRIPTION      :Adds highway to the road building menu - default roads with disallowed house construction.
+STR_GRF_NAME                    :{TITLE} {VERSION}
+STR_GRF_DESCRIPTION             :Adds highway to the road building menu - default roads with disallowed house construction.
 
-STR_BHWY_NAME            :Highway
-STR_BHWY_MENU_TEXT       :Highway construction
-STR_BHWY_TOOLBAR_CAPTION :Highway Construction
+# highway
+STR_BHWY_NAME                   :Highway
+STR_BHWY_MENU_TEXT              :Highway construction
+STR_BHWY_TOOLBAR_CAPTION        :Highway Construction
+
+# freeway
+STR_BFWY_NAME                   :Freeway
+STR_BFWY_MENU_TEXT              :Freeway construction
+STR_BFWY_TOOLBAR_CAPTION        :Freeway Construction
+
+# parameters
+STR_PARAM_ENABLE_BFWY_NAME      :Enable freeway
+STR_PARAM_ENABLE_BFWY_DESC      :Add freeway to the road building menu (default: off).
+STR_PARAM_ROAD_SPEED_LIMIT_NAME :Default road speed limit
+STR_PARAM_ROAD_SPEED_LIMIT_DESC :Set speed limit of default road in km/h (0 for no limit, default: 0).
+STR_PARAM_BHWY_SPEED_LIMIT_NAME :Highway speed limit.
+STR_PARAM_BHWY_SPEED_LIMIT_DESC :Set speed limit of highway in km/h (0 for no limit, default: 0).
+STR_PARAM_BFWY_SPEED_LIMIT_NAME :Freeway speed limit.
+STR_PARAM_BFWY_SPEED_LIMIT_DESC :Set speed limit of freeway in km/h (0 for no limit, default: 0).
