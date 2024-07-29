@@ -1,0 +1,17 @@
+Basic Highway Changelog
+----------------------------------------------------------------------
+
+Version 1.2.0 - 2024-07-29
+ - Added speed units to NewGRF settings.
+ - Changelog is now available.
+
+Version 1.1.1 - 2024-07-28
+ - Removed unintended periods from names of speed limit settings.
+
+Version 1.1.0 - 2024-07-28
+ - Fixed road vehicles not being compatible with highway road type.
+ - Added freeway road type that can be enabled in NewGRF settings.
+ - Added speed limit configuration to NewGRF settings.
+
+Version 1.0.0 - 2024-07-28
+ - Initial release.

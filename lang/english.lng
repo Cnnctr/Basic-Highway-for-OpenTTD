@@ -2,7 +2,7 @@
 
 # name and description
 STR_GRF_NAME                    :{TITLE} {VERSION}
-STR_GRF_DESCRIPTION             :Adds highway to the road building menu - default roads with disallowed house construction.
+STR_GRF_DESCRIPTION             :Adds highway to the road building menu - default roads with disallowed house construction. Useful for controlling town growth while keeping the original look of the game.
 
 # highway
 STR_BHWY_NAME                   :Highway
@@ -16,10 +16,15 @@ STR_BFWY_TOOLBAR_CAPTION        :Freeway Construction
 
 # parameters
 STR_PARAM_ENABLE_BFWY_NAME      :Enable freeway
-STR_PARAM_ENABLE_BFWY_DESC      :Add freeway to the road building menu (default: off).
+STR_PARAM_ENABLE_BFWY_DESC      :Add freeway to the road building menu (default: Off).
+STR_PARAM_SPEED_UNITS_NAME      :Speed units
+STR_PARAM_SPEED_UNITS_DESC      :Set speed units for the below speed settings. This should match your game setting to avoid conversion (default: km/h).
+STR_PARAM_SPEED_UNITS_MPH       :Imperial (mph)
+STR_PARAM_SPEED_UNITS_KPH       :Metric (km/h)
+STR_PARAM_SPEED_UNITS_MPS       :SI (m/s)
 STR_PARAM_ROAD_SPEED_LIMIT_NAME :Default road speed limit
-STR_PARAM_ROAD_SPEED_LIMIT_DESC :Set speed limit of default road in km/h (0 for no limit, default: 0).
+STR_PARAM_ROAD_SPEED_LIMIT_DESC :Set speed limit of default road (0 for no limit, default: 0).
 STR_PARAM_BHWY_SPEED_LIMIT_NAME :Highway speed limit
-STR_PARAM_BHWY_SPEED_LIMIT_DESC :Set speed limit of highway in km/h (0 for no limit, default: 0).
+STR_PARAM_BHWY_SPEED_LIMIT_DESC :Set speed limit of highway (0 for no limit, default: 0).
 STR_PARAM_BFWY_SPEED_LIMIT_NAME :Freeway speed limit
-STR_PARAM_BFWY_SPEED_LIMIT_DESC :Set speed limit of freeway in km/h (0 for no limit, default: 0).
+STR_PARAM_BFWY_SPEED_LIMIT_DESC :Set speed limit of freeway (0 for no limit, default: 0).
