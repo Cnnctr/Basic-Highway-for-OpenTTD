@@ -2,7 +2,7 @@ grf {
 	grfid:                  "MV\01\00";
 	name:                   string(STR_GRF_NAME);
 	desc:                   string(STR_GRF_DESCRIPTION);
-	version:                3;
+	version:                4;
 	min_compatible_version: 0;
 	param {
 		param_enable_bfwy {
@@ -57,6 +57,10 @@ grf {
 			def_value: 0;
 		}
 	}
+}
+
+roadtypetable {
+	ROAD, BHWY, BFWY
 }
 
 item(FEAT_ROADTYPES, item_default_road, 0) {

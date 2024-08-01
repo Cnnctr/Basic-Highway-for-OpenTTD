@@ -1,6 +1,9 @@
 Basic Highway Changelog
 ----------------------------------------------------------------------
 
+Version 1.2.1 - 2024-08-01
+ - Added missing roadtypetable.
+
 Version 1.2.0 - 2024-07-29
  - Added speed units to NewGRF settings.
  - Changelog is now available.
